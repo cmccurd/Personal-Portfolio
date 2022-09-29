@@ -13,6 +13,7 @@ class App extends React.Component {
         <button type="button" class="btn btn-primary">
           This is a bootstrap button
         </button>
+        <p>This is a text</p>
       </>
     );
   }
