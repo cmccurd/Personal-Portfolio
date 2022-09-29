@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "./components/NavBar";
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -6,15 +7,7 @@ class App extends React.Component {
   render() {
     const { name } = this.props;
     return (
-      <>
-        <h1>
-          Hello {name}
-        </h1>
-        <button type="button" class="btn btn-primary">
-          This is a bootstrap button
-        </button>
-        <p>This is a text</p>
-      </>
+      <NavBar/>
     );
   }
 }
