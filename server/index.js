@@ -6,5 +6,5 @@ app.use(express.json())
 app.use(express.static('dist'))
 
 app.listen(port, () => {
-    console.log('app is listening on port ' + port);
+    console.log('app is listening on http://localhost:' + port);
 })
