@@ -18,6 +18,7 @@ const Particle = () => {
   return (
     <Particles
       id="particles"
+      className="particles-canvas"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
@@ -42,7 +43,7 @@ const Particle = () => {
               default: "bounce",
             },
             random: false,
-            speed: 6,
+            speed: 3,
             straight: false,
           },
           number: {
@@ -56,7 +57,7 @@ const Particle = () => {
             value: 0.5,
           },
           shape: {
-            type: "star",
+            type: "triangle",
             stroke: {
               width: 6,
               color: "#77d4fc"
