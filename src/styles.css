@@ -9,10 +9,14 @@
 }
 
 body {
-  font-family: "Roboto Condesed" sans-serif;
+  font-family: "Roboto Condesed", sans-serif;
 }
 
 /**************************** NAVBAR ****************************/
+
+nav {
+  z-index: 2;
+}
 
 .logo {
   width: auto;
@@ -51,4 +55,62 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--logo-blue);
+}
+
+/**************************** HEADER ****************************/
+
+.header-wrapper {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: block;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condesed", sans-serif;
+}
+
+.main-info h1 {
+  color: var(--logo-blue);
+  text-transform: uppercase;
+}
+
+/************** TYPED TEXT **************/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+  min-height: 5rem;
+}
+
+/************** CONTACT ME BTN **************/
+
+.btn-contact-me {
+  font-size: 1.5rem;
+  color: var(--primary-white);
+  background-color: var(--logo-blue);
+  text-transform: uppercase;
+  border: 1pt solid var(--logo-blue);
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  margin-top: 2rem;
+}
+
+#particles {
+  position: absolute !important;
+  height: 100vh !important;
+  width: 100vh !important;
+  z-index: 1 !important;
 }
