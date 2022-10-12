@@ -33,7 +33,7 @@ const Header = () => {
         <h1>Web, Software, and Phone Application Development!</h1>
         <span className="typed-text" ref={el}></span>
         <a href="#" className="btn-contact-me">Contact Me</a>
-        {/* <AboutMe/> */}
+        <AboutMe/>
       </div>
     </div>
   )

@@ -11,10 +11,8 @@ class App extends React.Component {
     const { name } = this.props;
     return (
       <>
-        {/* <Particle /> */}
         <NavBar />
         <Header />
-        {/* <AboutMe /> */}
       </>
     );
   }

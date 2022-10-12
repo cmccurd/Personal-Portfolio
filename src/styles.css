@@ -64,7 +64,7 @@ nav ul li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 110vh;
   display: block;
 }
 
@@ -79,13 +79,16 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "Roboto Condesed", sans-serif;
   z-index: 1;
 }
 
 .main-info h1 {
   color: var(--logo-blue);
   text-transform: uppercase;
+}
+
+p {
+  color: var(--primary-white);
 }
 
 /************** TYPED TEXT **************/
@@ -117,10 +120,65 @@ nav ul li {
 
 #particles {
   position: absolute !important;
-  height: 89vh !important;
+  height: 109vh !important;
   width: 100%;
   z-index: 1 !important;
 }
+
+/************************ ABOUT ME *********************************/
+
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 25rem;
+  border-radius: 25%;
+  padding: .3rem;
+  border: 1px solid var(--primary-orange);
+}
+
+.about-heading {
+  color: var(--primary-orange) !important;
+}
+
+
+
+
+/* #top {
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  margin-top: 20vh;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#left {
+  background-color: white;
+  height: 50vh;
+}
+
+.image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: block;
+  width: 25rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid var(--primary-orange);
+  margin-left: 15vh;
+} */
+
+
+
+
+
 
 @media(max-width: 768px) {
   #particles {
@@ -139,42 +197,20 @@ nav ul li {
   }
 }
 
-/************************ ABOUT ME *********************************/
-/* .photo-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-img {
-  width: 16rem;
-  border-radius: 50%;
-  padding: .3rem;
-  border: 1px solid var(--primary-orange);
-}
-
-.about-heading {
-  color: var(--primary-orange);
-  text-transform: uppercase;
-}
-
-@media(max-width: 468px) {
+@media(max-width: 540px) {
   .profile-img {
-    width: 10rem;
+    width: 20rem;
   }
-} */
-
-/* .image {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  display: block;
+  .header-wrapper {
+    height: 160vh;
+  }
 }
 
-#top {
-  position: relative;
-  z-index: 2;
-  background-color: transparent;
-} */
+@media(max-width: 280px) {
+  .profile-img {
+    width: 14rem;
+  }
+  .header-wrapper {
+    height: 180vh;
+  }
+}
