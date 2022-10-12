@@ -118,6 +118,7 @@ nav ul li {
 #particles {
   position: absolute !important;
   height: 89vh !important;
+  width: 100%;
   z-index: 1 !important;
 }
 
