@@ -1,5 +1,7 @@
 import React from "react";
 import Background from "../../dist/assets/images/Background.jpg";
+import AboutMe from "./AboutMe.jsx";
+import Particle from "./Particle.jsx";
 import Typed from "typed.js"
 
 const Header = () => {
@@ -26,10 +28,12 @@ const Header = () => {
 
   return (
     <div className="header-wrapper" style={{backgroundImage: `url(${Background})`}}>
+      <Particle />
       <div className="main-info">
         <h1>Web, Software, and Phone Application Development!</h1>
         <span className="typed-text" ref={el}></span>
         <a href="#" className="btn-contact-me">Contact Me</a>
+        <AboutMe/>
       </div>
     </div>
   )
