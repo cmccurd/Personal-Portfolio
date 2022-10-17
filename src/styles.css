@@ -206,11 +206,17 @@ p {
   }
 }
 
+@media(max-width: 375px) {
+  .header-wrapper {
+    height: 200vh;
+  }
+}
+
 @media(max-width: 280px) {
   .profile-img {
     width: 14rem;
   }
   .header-wrapper {
-    height: 180vh;
+    height: 240vh;
   }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Background from "../../dist/assets/images/Background.jpg";
 import AboutMe from "./AboutMe.jsx";
 import Particle from "./Particle.jsx";
@@ -32,7 +33,7 @@ const Header = () => {
       <div className="main-info">
         <h1>Web, Software, and Phone Application Development!</h1>
         <span className="typed-text" ref={el}></span>
-        <a href="#" className="btn-contact-me">Contact Me</a>
+        <Link className="btn-contact-me" aria-current="page" to="/contact">Contact Me</Link>
         <AboutMe/>
       </div>
     </div>
