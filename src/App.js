@@ -1,21 +1,24 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
-import Header from "./components/Header.jsx";
-import Particle from "./components/Particle.jsx";
-import AboutMe from "./components/AboutMe.jsx";
-import "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./Home";
+import Portfolio from "./Portfolio";
+import Contact from "./Contact";
+import ErrorPage from "./components/ErrorPage.jsx";
 
-class App extends React.Component {
-  render() {
-    const { name } = this.props;
-    return (
-      <>
-        <NavBar />
-        <Header />
-      </>
-    );
-  }
+function App() {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<NavBar />}>
+          <Route index element={<Home />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Route>
+      </Routes>
+    </>
+  );
 }
 
 export default App;
