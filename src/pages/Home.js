@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Background from "../../dist/assets/images/Background.jpg";
-import AboutMe from "./AboutMe.jsx";
-import Particle from "./Particle.jsx";
+import AboutMe from "../components/AboutMe.jsx";
+import Particle from "../components/Particle.jsx";
 import Typed from "typed.js"
 
-const Header = () => {
+const Home = () => {
   const el = React.useRef(null);
 
   React.useEffect(() => {
@@ -40,4 +40,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Home;

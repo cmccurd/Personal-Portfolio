@@ -229,6 +229,11 @@ p {
   color: var(--primary-red);
 }
 
+/*------------ POPUP ------------------*/
+
+
+
+
 
 @media(max-width: 768px) {
   #particles {

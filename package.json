@@ -43,9 +43,9 @@
     "popper.js": "^1.16.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-popupbox": "^2.0.9",
     "react-router-dom": "^6.4.2",
     "react-tsparticles": "^2.3.3",
+    "reactjs-popup": "^2.0.5",
     "tsparticles": "^2.3.4",
     "typed.js": "^2.0.12"
   }
