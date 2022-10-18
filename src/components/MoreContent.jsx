@@ -38,7 +38,7 @@ const MoreContent = (props) => {
         src={img}
         alt={dis}
       />
-      <p>
+      <p className="description">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo
         est expedita quos adipisci suscipit unde itaque qui perferendis.
       </p>

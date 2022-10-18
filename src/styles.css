@@ -214,10 +214,19 @@ p {
   cursor: pointer;
 }
 
-/*------------ OVERFLOW BOX ------------------*/
+/*------------ POPUP BOX ------------------*/
+.popup-content {
+  width: 55rem;
+  height: 35rem;
+}
+
+p.description {
+  color: #000000;
+}
 .portfolio-image-popupbox {
-  width: 45rem;
-  padding: 0 0.5rem;
+  margin: auto;
+  display: block;
+  height: 25rem;
 }
 
 .hyper-link {
@@ -228,9 +237,6 @@ p {
 .hyper-link:hover {
   color: var(--primary-red);
 }
-
-/*------------ POPUP ------------------*/
-
 
 
 
