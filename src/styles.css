@@ -163,6 +163,8 @@ p {
 }
 
 .portfolio-image {
+  margin: auto;
+  display: block;
   width: 15rem;
   border: 1px solid var(--primary-orange);
   /* padding: 0 0.5rem; */
@@ -265,6 +267,13 @@ p.description {
   .header-wrapper {
     height: 160vh;
   }
+  .popup-content {
+    width: 20rem;
+    height: 20rem;
+  }
+  .portfolio-image-popupbox {
+    height: 10rem;
+  }
 }
 
 @media(max-width: 375px) {
@@ -279,5 +288,12 @@ p.description {
   }
   .header-wrapper {
     height: 240vh;
+  }
+  .popup-content {
+    width: 15rem;
+    height: 25rem;
+  }
+  .portfolio-image-popupbox {
+    height: 8rem;
   }
 }
