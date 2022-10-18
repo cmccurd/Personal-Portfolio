@@ -5,7 +5,7 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
 const MoreContent = (props) => {
-  const {dis, img, long} = props;
+  const {dis, img, long, title, des} = props;
   return (
     <Popup
       trigger={long ? <div className="portfolio-image-box col-lg">
@@ -33,14 +33,13 @@ const MoreContent = (props) => {
       }
       modal
     >
+      <h4>{title}</h4>
       <img
         className="portfolio-image-popupbox"
         src={img}
         alt={dis}
       />
-      <p className="description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque illo
-        est expedita quos adipisci suscipit unde itaque qui perferendis.
+      <p className="description">{des}
       </p>
       <b>GitHub:</b>{" "}
       <a
