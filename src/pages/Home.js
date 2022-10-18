@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Background from "../../dist/assets/images/Background.jpg";
-import AboutMe from "./AboutMe.jsx";
-import Particle from "./Particle.jsx";
+import AboutMe from "../components/AboutMe.jsx";
+import Particle from "../components/Particle.jsx";
 import Typed from "typed.js"
 
-const Header = () => {
+const Home = () => {
   const el = React.useRef(null);
 
   React.useEffect(() => {
@@ -32,11 +33,11 @@ const Header = () => {
       <div className="main-info">
         <h1>Web, Software, and Phone Application Development!</h1>
         <span className="typed-text" ref={el}></span>
-        <a href="#" className="btn-contact-me">Contact Me</a>
+        <Link className="btn-contact-me" aria-current="page" to="/contact">Contact Me</Link>
         <AboutMe/>
       </div>
     </div>
   )
 }
 
-export default Header
+export default Home;
