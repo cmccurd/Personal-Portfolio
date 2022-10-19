@@ -3,14 +3,19 @@ import { Link } from "react-router-dom";
 import Background from "../../dist/assets/images/Background.jpg";
 import AboutMe from "../components/AboutMe.jsx";
 import Particle from "../components/Particle.jsx";
-import Typed from "typed.js"
+import Typed from "typed.js";
+import Footer from "../components/Footer.jsx";
 
 const Home = () => {
   const el = React.useRef(null);
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Front-End: HTML, CSS, JavaScript", "Back-End: Java, Python, NodeJS, ExpressJS", "DBMS: MYSQL, Postgres, MongoDB"], // Strings to display
+      strings: [
+        "Front-End: HTML, CSS, JavaScript",
+        "Back-End: Java, Python, NodeJS, ExpressJS",
+        "DBMS: MYSQL, Postgres, MongoDB",
+      ], // Strings to display
       // Speed settings, try diffrent values untill you get good results
       startDelay: 0,
       typeSpeed: 80,
@@ -28,16 +33,24 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="header-wrapper" style={{backgroundImage: `url(${Background})`}}>
-      <Particle />
-      <div className="main-info">
-        <h1>Web, Software, and Phone Application Development!</h1>
-        <span className="typed-text" ref={el}></span>
-        <Link className="btn-contact-me" aria-current="page" to="/contact">Contact Me</Link>
-        <AboutMe/>
+    <>
+      <div
+        className="header-wrapper"
+        style={{ backgroundImage: `url(${Background})` }}
+      >
+        <Particle />
+        <div className="main-info">
+          <h1>Web, Software, and Phone Application Development!</h1>
+          <span className="typed-text" ref={el}></span>
+          <Link className="btn-contact-me" aria-current="page" to="/contact">
+            Contact Me
+          </Link>
+          <AboutMe />
+        </div>
       </div>
-    </div>
-  )
-}
+      <Footer />
+    </>
+  );
+};
 
 export default Home;
