@@ -55,7 +55,7 @@ nav ul li {
   height: 6rem !important;
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--logo-blue);
 }
 
@@ -163,8 +163,8 @@ p {
 }
 
 .portfolio-image {
-  margin: auto;
-  display: block;
+  /* margin: auto;
+  display: block; */
   width: 15rem;
   border: 1px solid var(--primary-orange);
   /* padding: 0 0.5rem; */
@@ -311,6 +311,30 @@ p.description {
   font-weight: 900;
   color: var(--logo-blue);
 }
+
+/************************ FOOTER COMPONENT *********************************/
+
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor:pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
 
 
 @media(max-width: 768px) {

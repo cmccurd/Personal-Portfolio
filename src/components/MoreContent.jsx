@@ -5,7 +5,7 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
 const MoreContent = (props) => {
-  const {dis, img, long, title, des} = props;
+  const {dis, img, long, title, des, link} = props;
   return (
     <Popup
       trigger={long ? <div className="portfolio-image-box col-lg">
@@ -45,10 +45,10 @@ const MoreContent = (props) => {
       <a
         className="hyper-link"
         onClick={() =>
-          window.open("https://github.com/Ari-Design/Modern-Shopping-Site")
+          window.open(link)
         }
       >
-        https://github.com/Ari-Design/Modern-Shopping-Site
+        {link}
       </a>
     </Popup>
   );
