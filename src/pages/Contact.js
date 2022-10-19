@@ -40,6 +40,7 @@ const Contact = () => {
           Please fill out this form and I'll do my best to get back as soon as I
           can.
         </p>
+        <span className="success-message">{successMessage}</span>
       </div>
       <div className="container">
         <form onSubmit={handleSubmit(onSubmit)}>

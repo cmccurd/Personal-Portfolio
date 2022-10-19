@@ -307,6 +307,11 @@ p.description {
   text-align: left;
 }
 
+.success-message {
+  font-weight: 900;
+  color: var(--logo-blue);
+}
+
 
 @media(max-width: 768px) {
   #particles {
