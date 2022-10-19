@@ -163,6 +163,8 @@ p {
 }
 
 .portfolio-image {
+  margin: auto;
+  display: block;
   width: 15rem;
   border: 1px solid var(--primary-orange);
   /* padding: 0 0.5rem; */
@@ -238,7 +240,77 @@ p.description {
   color: var(--primary-red);
 }
 
+/************************ CONTACTS *********************************/
 
+.contacts {
+  background: var(--primary-dark);
+  /* padding: 3rem 0; */
+}
+
+.contacts h1 {
+  color: var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+}
+
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: .125rem solid var(--primary-dark-grey);
+  border-radius: 0;
+  color: var(--primary-grey);
+  outline: 0 !important;
+  box-shadow: none !important;
+  top: 0;
+  margin-bottom: 1rem;
+  padding: 0 !important;
+}
+
+.contacts .container {
+  height: 75vh;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-orange);
+  border-bottom: .125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea {
+  height: 9.5rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+  font-size: 1.5rem;
+  color: var(--primary-white);
+  background-color: var(--logo-blue);
+  text-transform: uppercase;
+  border: 1pt solid var(--logo-blue);
+}
+
+.error-message {
+  display: block;
+  margin: .5rem 0;
+  color: var(--primary-white);
+  background-color: var(--primary-red);
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--logo-blue);
+}
 
 
 @media(max-width: 768px) {
@@ -256,6 +328,15 @@ p.description {
   .navbar-brand {
     width: 7rem !important;
   }
+  .contacts {
+    overflow-x: hidden;
+  }
+  .contacts .container {
+    padding: 0 1rem;
+  }
+  .contacts p {
+    padding: 0 0.4rem;
+  }
 }
 
 @media(max-width: 540px) {
@@ -264,6 +345,13 @@ p.description {
   }
   .header-wrapper {
     height: 160vh;
+  }
+  .popup-content {
+    width: 20rem;
+    height: 20rem;
+  }
+  .portfolio-image-popupbox {
+    height: 10rem;
   }
 }
 
@@ -279,5 +367,12 @@ p.description {
   }
   .header-wrapper {
     height: 240vh;
+  }
+  .popup-content {
+    width: 15rem;
+    height: 25rem;
+  }
+  .portfolio-image-popupbox {
+    height: 8rem;
   }
 }
