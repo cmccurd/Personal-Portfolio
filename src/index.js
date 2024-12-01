@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter , Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
@@ -12,7 +12,7 @@ import "./styles.css";
 
 ReactDOM.createRoot(document.getElementById("app")).render(
   <React.StrictMode>
-    <HashRouter >
+    <BrowserRouter basename='/Personal-Portfolio'>
       <Routes>
         <Route path="/" element={<NavBar />}>
           <Route index element={<Home />} />
@@ -21,6 +21,6 @@ ReactDOM.createRoot(document.getElementById("app")).render(
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
-    </HashRouter >
+    </BrowserRouter>
   </React.StrictMode>
 );

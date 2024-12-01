@@ -4,9 +4,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json())
-app.use(express.static('dist'))
+app.use(express.static('../../Personal-Portfolio'))
 app.get('*', (request, response) => {
-    response.sendFile(path.join(__dirname, '../dist/index.html'));
+    response.sendFile(path.join(__dirname, '../index.html'));
 });
 app.listen(port, () => {
     console.log('app is listening on http://localhost:' + port);
