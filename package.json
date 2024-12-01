@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/cmccurd/Personal-Portfolio/issues"
   },
-  "homepage": "https://github.com/cmccurd/Personal-Portfolio#readme",
+  "homepage": "http://https://cmccurd.github.io/Personal-Portfolio/",
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.3",
