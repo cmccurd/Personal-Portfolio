@@ -1,22 +1,19 @@
 import React from "react";
-import Footer from "../components/Footer.jsx";
 import MoreContent from "../components/MoreContent.jsx";
-import Ari1 from "../../dist/assets/images/Ari1.gif";
-import Ari2 from "../../dist/assets/images/Ari2.gif";
-import Ari3 from "../../dist/assets/images/Ari3.gif";
-import Ari4 from "../../dist/assets/images/Ari4.gif";
-import Blue1 from "../../dist/assets/images/Blue1.gif";
-import Blue2 from "../../dist/assets/images/Blue2.gif";
-import Blue3 from "../../dist/assets/images/Blue3.gif";
-import Blue4 from "../../dist/assets/images/Blue4.gif";
-import MVP1 from "../../dist/assets/images/MVP1.png";
-import MVP2 from "../../dist/assets/images/MVP2.png";
-import MVP3 from "../../dist/assets/images/MVP3.png";
-import MVP4 from "../../dist/assets/images/MVP4.png";
+import Ari1 from "../assets/Ari1.gif";
+import Ari2 from "../assets/Ari2.gif";
+import Ari3 from "../assets/Ari3.gif";
+import Ari4 from "../assets/Ari4.gif";
+import Blue1 from "../assets/Blue1.gif";
+import Blue2 from "../assets/Blue2.gif";
+import Blue3 from "../assets/Blue3.gif";
+import Blue4 from "../assets/Blue4.gif";
+import MVP1 from "../assets/MVP1.png";
+import MVP2 from "../assets/MVP2.png";
+import MVP3 from "../assets/MVP3.png";
+import MVP4 from "../assets/MVP4.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
-import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
 
 const Portfolio = () => {
   return (
@@ -152,7 +149,6 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

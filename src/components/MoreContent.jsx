@@ -1,8 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
-import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
 
 const MoreContent = (props) => {
   const {dis, img, long, title, des, link} = props;

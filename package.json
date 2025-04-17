@@ -1,54 +1,36 @@
 {
   "name": "personal-portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "webpack.config.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "clean": "rm dist/bundle.js",
-    "build-dev": "webpack --mode development --watch",
-    "build-prod": "webpack --mode production",
-    "start": "nodemon server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cmccurd/Personal-Portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cmccurd/Personal-Portfolio/issues"
-  },
-  "homepage": "https://github.com/cmccurd/Personal-Portfolio#readme",
-  "devDependencies": {
-    "@babel/core": "^7.19.3",
-    "@babel/preset-env": "^7.19.3",
-    "@babel/preset-react": "^7.18.6",
-    "babel-loader": "^8.2.5",
-    "css-loader": "^6.7.1",
-    "file-loader": "^6.2.0",
-    "nodemon": "^2.0.20",
-    "prettier": "^2.7.1",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.7.0",
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "bootstrap": "^5.2.1",
-    "express": "^4.18.1",
-    "jquery": "^3.6.1",
-    "popper.js": "^1.16.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-hook-form": "^7.38.0",
-    "react-router-dom": "^6.4.2",
-    "react-tsparticles": "^2.3.3",
-    "reactjs-popup": "^2.0.5",
-    "tsparticles": "^2.3.4",
-    "typed.js": "^2.0.12"
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.5.0",
+    "typed.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@tailwindcss/postcss": "^4.1.4",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4",
+    "vite": "^6.3.1"
   }
 }

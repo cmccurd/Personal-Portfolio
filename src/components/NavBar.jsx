@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../dist/assets/images/logo.svg";
+import logo from "../assets/logo.svg";
 import { Link, Outlet } from "react-router-dom";
 // React front awesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

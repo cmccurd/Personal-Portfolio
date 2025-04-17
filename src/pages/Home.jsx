@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Background from "../../dist/assets/images/Background.jpg";
+import Background from "../assets/Background.jpg";
 import AboutMe from "../components/AboutMe.jsx";
-import Particle from "../components/Particle.jsx";
 import Typed from "typed.js";
 import Footer from "../components/Footer.jsx";
 
@@ -38,7 +37,6 @@ const Home = () => {
         className="header-wrapper"
         style={{ backgroundImage: `url(${Background})` }}
       >
-        <Particle />
         <div className="main-info">
           <h1>Web, Software, and Phone Application Development!</h1>
           <span className="typed-text" ref={el}></span>
@@ -48,7 +46,6 @@ const Home = () => {
           <AboutMe />
         </div>
       </div>
-      <Footer />
     </>
   );
 };
