@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
-import AboutMe from "../components/AboutMe.jsx";
-import ContactForm from "../components/ContactForm";
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
+import { Link } from "react-router-dom";
 import Typed from "typed.js";
+
+const AboutMe = lazy(() => import('../components/AboutMe.jsx'));
+const ContactForm = lazy(() => import('../components/ContactForm.jsx'));
 
 const Home = () => {
   const el = useRef(null);
@@ -103,12 +105,12 @@ const Home = () => {
             <span ref={el}></span>
           </div>
 
-          <a
-            href="#portfolio"
+          <Link
+            to="/portfolio"
             className="inline-block px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg bg-white text-black font-bold rounded-xl hover:bg-gray-400 transition"
           >
             View Portfolio
-          </a>
+          </Link>
         </div>
 
         {/* Scroll Arrow */}
@@ -174,8 +176,13 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <AboutMe />
-      <ContactForm/>
+      <Suspense fallback={null}>
+        <AboutMe />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <ContactForm />
+      </Suspense>
     </main>
   );
 };

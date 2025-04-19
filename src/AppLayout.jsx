@@ -1,6 +1,10 @@
 import { Outlet, useLocation  } from "react-router-dom";
+import { lazy, Suspense } from 'react';
 import NavBar from "./components/NavBar.jsx";
-import Footer from "./components/Footer.jsx";
+
+const Footer = lazy(() => import('./components/Footer.jsx'));
+
+
 
 const AppLayout = () => {
   return (
@@ -8,7 +12,9 @@ const AppLayout = () => {
       <NavBar />
       <div className="pt-16 md:pt-24 min-h-screen bg-black">
         <Outlet /> 
-        <Footer />
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
       </div>
     </>
   );
