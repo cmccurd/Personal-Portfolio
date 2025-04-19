@@ -8,13 +8,13 @@ const Home = () => {
   const nextSectionRef = useRef(null);
   const [showArrow, setShowArrow] = useState(false);
 
-  // useEffect(() => {
-  //   if ('scrollRestoration' in window.history) {
-  //     window.history.scrollRestoration = 'manual';
-  //   }
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
   
-  //   window.scrollTo(0, 0);
-  // }, []);
+    window.scrollTo(0, 0);
+  }, []);
   
 
   useEffect(() => {
