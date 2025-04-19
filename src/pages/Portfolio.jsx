@@ -1,5 +1,5 @@
 import React from "react";
-import MoreContent from "../components/MoreContent.jsx";
+// import div from "../components/div.jsx";
 import Ari1 from "../assets/Ari1.gif";
 import Ari2 from "../assets/Ari2.gif";
 import Ari3 from "../assets/Ari3.gif";
@@ -26,7 +26,7 @@ const Portfolio = () => {
             <h4 className="text-uppercase text-center py-5">
               Product page for modern online shopping
             </h4>
-            <MoreContent
+            <div
               key="Ari1"
               title="Browsing different products in the Image Gallery"
               link="https://github.com/Ari-Design/Modern-Shopping-Site"
@@ -35,7 +35,7 @@ const Portfolio = () => {
               dis="Moving through products"
               long={false}
             />
-            <MoreContent
+            <div
               key="Ari2"
               title="Browsing the different varieties in the Image Gallery"
               link="https://github.com/Ari-Design/Modern-Shopping-Site"
@@ -44,7 +44,7 @@ const Portfolio = () => {
               dis="Selecting different styles"
               long={false}
             />
-            <MoreContent
+            <div
               key="Ari3"
               title="The Image Magnifier"
               link="https://github.com/Ari-Design/Modern-Shopping-Site"
@@ -53,7 +53,7 @@ const Portfolio = () => {
               dis="Using the image magnifier"
               long={false}
             />
-            <MoreContent
+            <div
               key="Ari4"
               title="Looking through past questions"
               link="https://github.com/Ari-Design/Modern-Shopping-Site"
@@ -67,7 +67,7 @@ const Portfolio = () => {
           {/* Blue Ocean */}
           <div className="image-box-wrapper row justify-content-center">
             <h4 className="text-uppercase text-center py-5">Free Craigslist</h4>
-            <MoreContent
+            <div
               key="Blue1"
               title="Logging into the App"
               link="https://github.com/Team-Osiris-HR/BlueOcean"
@@ -76,7 +76,7 @@ const Portfolio = () => {
               dis="Authenticating to app"
               long={true}
             />
-            <MoreContent
+            <div
               key="Blue2"
               title="Browsing the different items in the feed"
               link="https://github.com/Team-Osiris-HR/BlueOcean"
@@ -85,7 +85,7 @@ const Portfolio = () => {
               dis="Scrolling application feed"
               long={true}
             />
-            <MoreContent
+            <div
               key="Blue3"
               title="Browsing items on the Map"
               link="https://github.com/Team-Osiris-HR/BlueOcean"
@@ -94,7 +94,7 @@ const Portfolio = () => {
               dis="Browsing listing on map"
               long={true}
             />
-            <MoreContent
+            <div
               key="Blue4"
               title="Browsing a listing"
               link="https://github.com/Team-Osiris-HR/BlueOcean"
@@ -110,7 +110,7 @@ const Portfolio = () => {
             <h4 className="text-uppercase text-center py-5">
               Magic The Gathering Deckbuilder App
             </h4>
-            <MoreContent
+            <div
               key="MVP1"
               title="Creating a new deck"
               link="https://github.com/cmccurd/BuildBetter"
@@ -119,7 +119,7 @@ const Portfolio = () => {
               dis="Creating a new deck"
               long={false}
             />
-            <MoreContent
+            <div
               key="MVP2"
               title="Adding Cards"
               link="https://github.com/cmccurd/BuildBetter"
@@ -128,7 +128,7 @@ const Portfolio = () => {
               dis="Using predictive text to search cards"
               long={false}
             />
-            <MoreContent
+            <div
               key="MVP3"
               title="Seeing the cards in your deck"
               link="https://github.com/cmccurd/BuildBetter"
@@ -137,7 +137,7 @@ const Portfolio = () => {
               dis="Adding new card"
               long={false}
             />
-            <MoreContent
+            <div
               key="MVP4"
               title="Importing cards"
               link="https://github.com/cmccurd/BuildBetter"

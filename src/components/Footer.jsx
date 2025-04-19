@@ -1,36 +1,29 @@
-import React from 'react';
 import { Link } from "react-router-dom";
 
-export default function Footer () {
+export default function Footer() {
+  const links = ['Home', 'Portfolio', 'Contact'];
+  const linkItems = links.map((link, index) => (
+    <div key={`${index}${link}`}>
+      <Link
+        to={link === 'Home' ? '/' : `/${link.toLowerCase()}`}
+        className="text-gray-400 hover:text-white transition-colors duration-200"
+      >
+        {link}
+      </Link>
+    </div>
+  ));
 
   return (
-    <div className="footer">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-4 col-md-6 col-sm-6">
-            <div className="d-flex">
-              <p>For the use of Cameron McCurdy</p>
-            </div>
-            <div className="d-flex">
-              <a href="tel:(317)772-2641">(317)772-2641</a>
-            </div>
-            <div className="d-flex">
-              <p>cam.alex.mccurdy@gmail.com</p>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-2 col-sm-6">
-            <div className="row">
-              <div className="col">
-                <Link className="footer-nav" to="/">Home</Link>
-                <br />
-                <Link className="footer-nav" to="/portfolio">Portfolio</Link>
-                <br />
-                <Link className="footer-nav" to="/contact">Contact Me</Link>
-              </div>
-            </div>
-          </div>
+    <footer className="bg-black text-gray-400 py-8 px-4">
+      <div className="max-w-6xl mx-auto flex flex-col items-center space-y-2">
+        {/* Nav Links */}
+        <div className="flex gap-6">{linkItems}</div>
+
+        {/* Contact Info */}
+        <div className="text-center">
+          <p>© 2025 - McCurdy Group LLC</p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

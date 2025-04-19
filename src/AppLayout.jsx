@@ -3,13 +3,14 @@ import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
 
 const AppLayout = () => {
-  const location = useLocation();
   return (
-    <div className="">
+    <>
       <NavBar />
-      <Outlet /> 
-      <Footer />
-    </div>
+      <div className="pt-16 md:pt-24">
+        <Outlet /> 
+        <Footer />
+      </div>
+    </>
   );
 };
 

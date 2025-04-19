@@ -1,12 +1,9 @@
-import React, { useState } from "react";
-import Footer from "../components/Footer.jsx";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
 
   return (
-    <>
-      
-    </>
+    <ContactForm/>
   );
 };
 
