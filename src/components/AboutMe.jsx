@@ -1,7 +1,7 @@
 import React from "react";
-import author from "../assets/DSC00145.JPG";
-import gitImg from "../assets/github-white-black-git.png";
-import linkedin from "../assets/linkedin-logo-white.png";
+import author from "../assets/DSC00145.webp";
+import gitImg from "../assets/github-white-black-git.webp";
+import linkedin from "../assets/linkedin-logo-white.webp";
 
 const AboutMe = () => {
   return (

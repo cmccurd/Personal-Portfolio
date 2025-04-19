@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -49,7 +48,7 @@ const NavBar = () => {
           {/* Left: Logo */}
           <Link to="/" className="flex items-center h-12 sm:h-16">
             <img
-              src={logo}
+              src="/logo.webp"
               alt="logo"
               className="h-full object-contain"
             />

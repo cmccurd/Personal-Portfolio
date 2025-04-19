@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import Background from "../assets/backgroundImg.png";
 import AboutMe from "../components/AboutMe.jsx";
 import ContactForm from "../components/ContactForm";
 import Typed from "typed.js";
@@ -83,8 +82,12 @@ const Home = () => {
           }}
         >
           <img
-            src={Background}
+            src="/backgroundImg.webp"
+            sizes="100vw"
             alt="Hero Background"
+            width="1920"
+            height="1080"
+            fetchpriority="high"
             className="absolute inset-0 w-full h-full object-cover object-[60%_70%]"
           />
         </div>
