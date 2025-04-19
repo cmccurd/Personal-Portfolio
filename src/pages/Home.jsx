@@ -83,9 +83,10 @@ const Home = () => {
               "radial-gradient(ellipse at center, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 71%)",
           }}
         >
-          <img
+         <img
             src="/backgroundImg.webp"
-            sizes="100vw"
+            srcSet="/backgroundImg_mobile.webp 768w, /backgroundImg.webp 1920w"
+            sizes="(max-width: 768px) 100vw, 1920px"
             alt="Hero Background"
             width="1920"
             height="1080"
