@@ -11,7 +11,25 @@ import MVP2 from "../assets/MVP2.png";
 import MVP3 from "../assets/MVP3.png";
 import MVP4 from "../assets/MVP4.png";
 
+import hero from "../assets/portfolio/mummeInteriors/hero.png";
+import project1 from "../assets/portfolio/mummeInteriors/project1.png";
+import project2 from "../assets/portfolio/mummeInteriors/project2.png";
+import project3 from "../assets/portfolio/mummeInteriors/project3.png";
+import work1 from "../assets/portfolio/mummeInteriors/work1.png";
+import project from "../assets/portfolio/mummeInteriors/project.webp";
+import work from "../assets/portfolio/mummeInteriors/work.webp";
+
+
 const projects = [
+  {
+    slug: "mumme-interiors",
+    title: "Mumme Interiors",
+    subtitle: "Brand new website to showcase Matthew's portfolio",
+    description:
+      "Designed and built a fully custom portfolio website for Matthew Mumme, an interior designer and remodeler. The site includes a hero video header, project galleries with image and video content, and mobile-optimized layouts. It was built using React, TailwindCSS, and a custom routing structure to display detailed case studies.",
+    images: [hero, work, project, project1, project2, project3, work1],
+    preview: hero,
+  },  
   {
     slug: "modern-shopping-site",
     title: "Modern Shopping Site",

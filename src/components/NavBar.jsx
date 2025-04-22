@@ -50,7 +50,9 @@ const NavBar = () => {
             <img
               src="/logo.webp"
               alt="logo"
-              className="max-w-[201px] h-full object-contain"
+              width="201"
+              height="64"
+              className="w-auto h-auto h-full object-contain"
             />
           </Link>
 

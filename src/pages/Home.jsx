@@ -89,7 +89,7 @@ const Home = () => {
             alt="Hero Background"
             width="1920"
             height="1080"
-            fetchpriority="high"
+            fetchPriority="high"
             className="absolute inset-0 w-full h-full object-cover object-[60%_70%]"
           />
         </div>
